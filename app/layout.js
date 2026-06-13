@@ -15,9 +15,11 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>{children}</ThemeProvider>
         <footer style={{ overflow: "hidden", padding: "12px 0", backgroundColor: "#101828" }}>
-          <span className="marquee-text" style={{ fontSize: "14px", color: "#ffffff" }}>
-            Dhruvil Mistry ❤️
-          </span>
+          <div className="marquee-inner" style={{ fontSize: "14px", color: "#ffffff" }}>
+            {Array.from({ length: 20 }).map((_, i) => (
+              <span key={i} className="marquee-copy">Dhruvil Mistry ❤️</span>
+            ))}
+          </div>
         </footer>
       </body>
     </html>

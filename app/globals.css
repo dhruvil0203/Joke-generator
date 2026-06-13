@@ -5,12 +5,17 @@ body {
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(100vw); }
-  100% { transform: translateX(-100%); }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-.marquee-text {
-  display: inline-block;
+.marquee-inner {
+  display: flex;
+  width: fit-content;
+  animation: marquee 8s linear infinite;
+}
+
+.marquee-copy {
   white-space: nowrap;
-  animation: marquee 10s linear infinite;
+  padding-right: 80px;
 }
