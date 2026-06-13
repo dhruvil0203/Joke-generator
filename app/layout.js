@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
-        <footer style={{ textAlign: "center", padding: "12px", fontSize: "14px" }}>
-          Dhruvil Mistry ❤️
+        <footer style={{ overflow: "hidden", padding: "12px 0", backgroundColor: "#101828" }}>
+          <span className="marquee-text" style={{ fontSize: "14px", color: "#ffffff" }}>
+            Dhruvil Mistry ❤️
+          </span>
         </footer>
       </body>
     </html>
