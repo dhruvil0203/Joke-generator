@@ -14,6 +14,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <footer style={{ textAlign: "center", padding: "12px", fontSize: "14px" }}>
+          Dhruvil Mistry ❤️
+        </footer>
       </body>
     </html>
   );
